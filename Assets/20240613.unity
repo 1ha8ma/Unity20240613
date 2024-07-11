@@ -241,11 +241,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b1f584efc641949a6f28de3a69e253, type: 3}
---- !u!1 &682557821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8144778562707796000, guid: 66a1fdcb1b8ef6045bdba7f9a0752e5d, type: 3}
-  m_PrefabInstance: {fileID: 919866025}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &901123242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,6 +397,10 @@ PrefabInstance:
 '
       objectReference: {fileID: 0}
     - target: {fileID: 8144778562707796000, guid: 66a1fdcb1b8ef6045bdba7f9a0752e5d, type: 3}
+      propertyPath: m_Name
+      value: scoreText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144778562707796000, guid: 66a1fdcb1b8ef6045bdba7f9a0752e5d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -541,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5cd14b26dad1345adab2e021b64b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 682557821}
+  scoreText: {fileID: 1324226621}
 --- !u!114 &1324226624
 MonoBehaviour:
   m_ObjectHideFlags: 0

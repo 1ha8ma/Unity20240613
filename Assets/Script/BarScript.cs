@@ -19,4 +19,13 @@ public class BarScript : MonoBehaviour
         //左右のキーを入力すると速度を変更して移動
         myRigidBody.velocity = new Vector3(Input.GetAxis("Horizontal") * speed, 0.0f, 0.0f);//GetAxisで入力をとっている"Horizontal"は水平方向の入力を受け取るという意味。"Vertical"を入れたら垂直方向の入力を受け取るという意味になる
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //ボールが衝突したら効果音を鳴らす
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }
